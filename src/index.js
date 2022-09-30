@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
+import {fetchUsers} from './store/slice/users'
+
+store.dispatch(fetchUsers())
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
